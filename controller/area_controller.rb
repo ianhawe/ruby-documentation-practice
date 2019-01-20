@@ -1,6 +1,10 @@
-class area_Controller
+class AreaController < Sinatra::Base
 
-    get '/' do 
+    set :root, File.join(File.dirname(__FILE__), '..')
+
+    set :views, Proc.new { File.join(root, "views") }
+
+    get '/' do
         erb :'pages/shape.erb'
     end
 
