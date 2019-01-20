@@ -5,7 +5,7 @@ class AreaController < Sinatra::Base
     set :views, Proc.new { File.join(root, "views") }
 
     get '/' do
-        erb :'pages/shape.erb'
+        erb :'pages/shape'
     end
 
 end
