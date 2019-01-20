@@ -9,6 +9,6 @@ class AreaController < Sinatra::Base
     end
 
     post '/result' do
-        "Hello World"
+        erb :'pages/result'
     end
 end
