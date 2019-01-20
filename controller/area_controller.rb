@@ -8,4 +8,7 @@ class AreaController < Sinatra::Base
         erb :'pages/shape'
     end
 
+    post '/result'
+        erb :'pages/result'
+    end
 end
